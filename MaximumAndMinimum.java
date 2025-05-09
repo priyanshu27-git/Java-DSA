@@ -10,6 +10,9 @@ public class MaximumAndMinimum {
              min = arr[i];
             }
         }
+        for (int i : arr) {
+            System.out.println(i);
+        }
         System.out.println("Maximum element = " +max);
         System.out.println("Minimum element = " +min);
     }
