@@ -1,8 +1,7 @@
 public class ReverseArrayInPlace{
-    public static void reverse(int a[]) {
+     static void reverse(int a[]) {
         int temp;
-        int left = 0;
-        int right = a.length - 1;
+        int left = 0,right = a.length - 1;
     for (int i = 0; i < a.length; i++) {
         if(left < right){
             temp = a[right];
@@ -18,6 +17,11 @@ public class ReverseArrayInPlace{
     }
     public static void main(String[] args) {
         int a[] = {1,2,3,4,5};
+        System.out.println("Original Array  ");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+        System.out.println("Reversed Array  ");
         reverse(a);  
     }
 }
