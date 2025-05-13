@@ -25,6 +25,11 @@ public class SortArray_DutchNationalFlag {
 
     public static void main(String[] args) {
         int[] a = {2, 0, 1, 2, 0, 1};
+        System.out.println("Original Array ");
+        for (int i : a) {
+            System.out.println(i);
+        }
+        System.out.println("Sorted Array ");
         sortColors(a);
         for (int i : a) {
             System.out.println(i);
