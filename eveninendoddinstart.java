@@ -22,7 +22,7 @@ public class eveninendoddinstart {
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }
-        System.out.println("\nReversed Array ");
+        System.out.println("\nUpdated Array ");
         int arr[] = Movenumbers(a);
         for (int i : arr) {//For each loop 
             System.out.print(i + " ");
