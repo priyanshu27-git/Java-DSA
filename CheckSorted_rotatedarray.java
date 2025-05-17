@@ -18,9 +18,12 @@ public class CheckSorted_rotatedarray {
             System.out.println("Array is not Sorted and Rotated");
         }
     }
-
     public static void main(String[] args) {
         int a[] = {2,1,3,4,5};
+        int b[] = {1,2,3,4,5};
+        int c[] = {3,4,5,1,2};
         sorted_rotated(a);
+        sorted_rotated(b);
+        sorted_rotated(c);
     }
 }
