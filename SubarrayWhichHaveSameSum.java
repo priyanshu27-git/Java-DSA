@@ -18,6 +18,7 @@ public class SubarrayWhichHaveSameSum {
         //print Subarray
         if (subarray) {
             System.out.println("Subarray which have given sum ");
+            System.out.println("From index " + start + " to " + (end - 1));
             for (int i = start; i < end; i++) {
                 System.out.print(a[i] + " ");
             }
