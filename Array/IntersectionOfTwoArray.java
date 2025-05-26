@@ -2,34 +2,28 @@
 public class IntersectionOfTwoArray {
 
     static void Intersection(int a[], int b[]) {
-        int size = (a.length < b.length) ? a.length : b.length;
-        int result[] = new int[size];
-        int k = 0;
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < b.length; j++) {
-                if (a[i] == b[j]) {
-                    boolean alreadyexists = false;
-                    for (int m = 0; m < result.length; m++) {
-                        if (result[m] == a[i]) {
-                            alreadyexists = true;
-                            break;
-                        }
-                    }
-                    if (!alreadyexists) {
-                        result[k++] = a[i];
-                    }
+        int i = 0, j = 0;
+        while (i < a.length && j < b.length) {
+            if (a[i] < b[j]) {
+                i++;
+            } else if (a[i] > b[j]) {
+                j++;
+            } else {
+                System.out.print(a[i] + " ");
+                int current = a[i];
+                while (i < a.length && a[i] == current) {
+                    i++;
+                }
+                while (j < b.length && b[j] == current) {
+                    j++;
                 }
             }
         }
-        for (int i = 0; i < k; i++) {
-            System.out.print(result[i] + " ");
-        }
     }
-
     public static void main(String[] args) {
         int a[] = {1, 2, 3, 4};
         int b[] = {2, 3, 5, 6};
-        System.out.println("Intersection of Two Array ");
+        System.out.println("Intersection of Two Sorted Array ");
         Intersection(a, b);
     }
 }
