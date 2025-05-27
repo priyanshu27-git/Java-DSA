@@ -31,14 +31,14 @@ public class UnionandIntersection {
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < b.length; j++) {
                 if (a[i] == b[j]) {
-                    boolean alreadyexits = false;
+                    boolean alreadyexists = false;
                     for (int m = 0; m < result.length; m++) {
                         if (result[m] == a[i]) {
-                            alreadyexits = true;
+                            alreadyexists = true;
                             break;
                         }
                     }
-                    if (!alreadyexits) {
+                    if (!alreadyexists) {
                         result[k++] = a[i];
                     }
                 }
