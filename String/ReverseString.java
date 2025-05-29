@@ -4,6 +4,7 @@ public class ReverseString {
     public static void main(String[] args) {
         StringBuilder str = new StringBuilder();
         str.append("desserts");
+        System.out.println("Original String = " +str);
         int left = 0, right = str.length() - 1;
         while (left < right) {
             char temp = str.charAt(left);
@@ -12,6 +13,6 @@ public class ReverseString {
             left++;
             right--;
         }
-        System.out.println(str.toString());
+        System.out.println("Reversed String = " +str.toString());
     }
 }
