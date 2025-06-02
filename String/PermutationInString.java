@@ -2,7 +2,7 @@
 public class PermutationInString {
 
     public static void main(String[] args) {
-        String str = "ABC";
+        String str = "AAA";
         int n = str.length();
         char[] input = new char[n];
         for (int i = 0; i < n; i++) {
