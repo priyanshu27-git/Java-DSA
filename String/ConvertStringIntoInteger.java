@@ -7,10 +7,11 @@ public class ConvertStringIntoInteger {
         while (i < str.length() && str.charAt(i) == ' ') {
             i++;
         }
-        while (i < str.length() && (str.charAt(i) == '+' || str.charAt(i) == '-')) {
-            if (str.charAt(i++) == '-') {
+        if (i < str.length() && (str.charAt(i) == '+' || str.charAt(i) == '-')) {
+            if (str.charAt(i) == '-') {
                 sign = -1;
             }
+            i++;
         }
         while (i < str.length() && str.charAt(i) >= '0' && str.charAt(i) <= '9') {
             if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE && str.charAt(i) - '0' > 7)) {
