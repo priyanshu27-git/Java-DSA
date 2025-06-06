@@ -27,7 +27,9 @@ public class Implement_strstr {
     public static void main(String[] args) {
         String haystack = "priyanshu";
         String needle = "anshu";
-        int ans = strstr(haystack, needle);
-        System.out.println(ans);
+        String haystack1 = "codingisfun";
+        String needle1 = "code";
+        System.out.println(strstr(haystack, needle));
+        System.out.println(strstr(haystack1, needle1));
     }
 }
