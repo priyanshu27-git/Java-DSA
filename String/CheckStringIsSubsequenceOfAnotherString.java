@@ -14,8 +14,8 @@ public class CheckStringIsSubsequenceOfAnotherString {
     }
 
     public static void main(String[] args) {
-        String s = "abc";
-        String t = "acb";
+        String s = "abc",t = "ahbgdc",s1 = "axc",t1 = "ahbgdc";
         System.out.println(isSubsequence(s, t));
+        System.out.println(isSubsequence(s1, t1));
     }
 }
