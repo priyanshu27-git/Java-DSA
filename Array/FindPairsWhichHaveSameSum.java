@@ -3,10 +3,10 @@ public class FindPairsWhichHaveSameSum {
 
     static void Pairs(int[] a, int sum) {
         for (int i = 0; i < a.length; i++) {
-            for (int j = i+1; j < a.length - 1; j++) {
+            for (int j = i+1; j < a.length; j++) {
                 int checksum = a[i] + a[j];
                 if (checksum == sum) {
-                    System.out.print("(" + a[i] + "," + a[j + 1] + ")" + "\n");
+                    System.out.print("(" + a[i] + "," + a[j] + ")" + "\n");
                 }
             }
         }
