@@ -21,14 +21,16 @@ public class spiralTraversalOfAMatrix {
                 for (int i = endcol; i >= startcol; i--) {// bottom row
                     System.out.print(a[endrow][i] + " ");
                 }
+                endrow--;
             }
-            endrow--;
+
             if (startcol <= endcol) {
                 for (int i = endrow; i >= startrow; i--) {// left column
                     System.out.print(a[i][startcol] + " ");
                 }
+                startcol++;
             }
-            startcol++;
+
         }
     }
 
