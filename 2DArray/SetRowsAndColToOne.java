@@ -30,6 +30,7 @@ public class SetRowsAndColToOne {
             {0, 0, 0}
         };
         solve(a);
+        //print array 
         for (int ele[] : a) {
             for (int val : ele) {
                 System.out.print(val + " ");
